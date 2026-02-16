@@ -1,4 +1,87 @@
-# React + Vite
+# MERN Stack Application
+
+Full-stack web application built with MongoDB, Express.js, React, and Node.js.
+
+## 📋 Description
+
+Yeh ek complete MERN stack project hai jo modern web development practices follow karta hai.
+
+## 🚀 Features
+
+- User authentication (JWT)
+- RESTful API
+- React frontend with responsive design
+- MongoDB database
+- Express.js backend
+
+## 🛠️ Technologies Used
+
+### Frontend
+- React.js
+- React Router
+- Axios
+- CSS3
+
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+
+## 📦 Installation
+
+### Prerequisites
+- Node.js (v14 ya upar)
+- MongoDB
+- Git
+
+### Backend Setup
+```bash
+cd backend
+npm install
+cp .env.example .env
+# .env file me apni details add karo
+npm start
+```
+
+### Frontend Setup
+```bash
+cd frontend
+npm install
+npm start
+```
+
+## 🔐 Environment Variables
+
+Backend `.env` file me ye variables chahiye:
+```
+PORT=5000
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
+
+## 🌐 API Endpoints
+
+### Authentication
+- `POST /api/auth/register` - User registration
+- `POST /api/auth/login` - User login
+
+### Users
+- `GET /api/users` - Get all users (protected)
+- `GET /api/users/:id` - Get single user
+
+## 📱 Screenshots
+
+(Screenshots yahan add kar sakte hain)
+
+## 👨‍💻 Author
+
+Your Name
+
+## 📄 License
+
+MIT License
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
