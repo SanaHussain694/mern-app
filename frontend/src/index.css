@@ -11,3 +11,38 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+  color: #111827;
+}
+
+input:focus {
+  outline: none;
+  border-color: #185FA5 !important;
+  box-shadow: 0 0 0 3px rgba(24, 95, 165, 0.15);
+}
+
+button:hover {
+  background: #0f4a8a !important;
+}
+@keyframes slideDown {
+  from {
+    transform: translateX(-50%) translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(-50%) translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-down {
+  animation: slideDown 0.3s ease-out;
+}
