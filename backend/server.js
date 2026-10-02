@@ -54,6 +54,7 @@ app.use('/api/behavior-logs', behaviorLogRoutes);
 app.use('/api/interviews', interviewRoutes);
 app.use('/api/notifications', notificationRoutes);
 app.use('/api/admin', adminRoutes);
+app.use('/api/applications', require('./routes/applications'));
 
 // ================= HEALTH CHECK =================
 app.get('/', (req, res) => {
